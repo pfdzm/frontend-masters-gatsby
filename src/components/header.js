@@ -15,6 +15,10 @@ const NavLink = styled(Link)`
   &.current-page {
     border-bottom: 2px solid #222;
   }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 `;
 
 const Header = () => (
@@ -24,7 +28,7 @@ const Header = () => (
       border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
-      padding: 0.5rem calc((100vw - 550px) * 0.5);
+      padding: 0.5rem calc((100vw - 550px - 0.5rem) * 0.5);
     `}
   >
     <NavLink to="/" fontWeight="bold">
